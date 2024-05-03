@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về Podman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Giới thiệu về Podman</h1>
+    <p>Podman (Pod Manager) là một công cụ quản lý container và image tương tự như Docker, nhưng được thiết kế để hoạt động mà không cần quyền root và không cần khởi động daemon riêng biệt. Podman được phát triển bởi Red Hat và cộng đồng nguồn mở.</p>
+    
+    <h2>Các tính năng chính của Podman</h2>
+    <ul>
+        <li>Không cần quyền root để chạy container</li>
+        <li>Không cần khởi động daemon riêng biệt</li>
+        <li>Hỗ trợ tạo và quản lý Pod (nhóm các container liên quan)</li>
+        <li>Tương thích với Docker CLI, có thể sử dụng các lệnh giống Docker</li>
+        <li>Hỗ trợ các đặc tính bảo mật như SELinux, AppArmor, Seccomp</li>
+        <li>Có thể sử dụng các image từ Docker Hub hoặc nguồn khác</li>
+    </ul>
+    
+    <h2>Ví dụ sử dụng Podman</h2>
+    <p>Để chạy một container với Podman, bạn có thể sử dụng lệnh tương tự như Docker:</p>
+    <pre>podman run -d --name my-container nginx</pre>
+    
+    <p>Lệnh trên sẽ tải image nginx và chạy một container mới với tên "my-container" ở chế độ detached (chạy ngầm).</p>
+    
+    <p>Để biết thêm thông tin về Podman, hãy truy cập <a href="https://podman.io/">trang web chính thức</a>.</p>
+</body>
+</html>
